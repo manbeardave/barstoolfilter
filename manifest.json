@@ -1,0 +1,16 @@
+{
+    "name": "barstool_nsfw",
+    "version": "1.0",
+    "manifest_version":2,
+    "description": "Gotta catch Youtube events!",
+    "permissions": ["tabs", "http://*/*"],
+    "content_scripts" : [{
+        "matches" : [ "http://www.barstoolsports.com/*"],
+        "js" : ["myScript.js"]
+    }],
+    "web_accessible_resources" : ["script.js"],
+    "browser_action":{
+        "default_title": "TnAHider",
+        "default_popup": "popup.html"
+    }
+}
